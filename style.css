@@ -1,89 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-*{
-  margin:0;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');*{
+  margin: 0;
   padding: 0;
-  font-size: large;
+  font-size: 30px;
 }
 body{
-  background-color: #d0c7e7;
-  
+  background-color:#0F100E;
   display: flex;
   justify-content: center;
   align-items: center;
-  height:100vh;
+  height: 100vh;
 }
-#calculator{
-  width: 285px;
-  height: auto;
-  margin: 10px;
- padding: 5px;
-  background-color: #92908f;
-  border-radius: 5px;
-  box-shadow: 5px 5px 5px 5px #7a7877;
+.container{
+  width: 340px;
+  height: 620px;
+  background-color:black;
+  color: white;
+  border-radius: 10px;
+
 }
-
-
+.ust{
+  display: flex;
+  margin-top: 5px;
+}
 p{
-font-size: 28px;
-width: 250px;
-height: 35px;
-background-color: #efe4e7;
-float:left;
-border-radius: 3px;
-padding: 10px 10px;
-margin:5px;
-text-align: right;
-
-
-
-
+  font-size: 80px;
+  width: 340px;
+  height: 170px;
+  text-align: right;
+  border-radius: 2px;
+  background-color:black;
+  color: white;
+  overflow: hidden;
+  text-overflow: ellipsis;    
 }
 button{
-  width:60px;
-  height: 50px;
-  background-color: #d0afb9;
-  color:  #8e616f;
-  border-radius: 3px;
-  margin:5px 5px 5px 5px;
-  float: left;
-  position:relative;
-  cursor: pointer;
-  line-height: 36px;
+  width: 70px;
+  height: 70px;
+  background-color: #2F322A;
+  color: white;
+  border-radius: 100%;
+  border-color:black;
+  margin-top: 10px;
+  margin-right:5px ;
+}
+.column{
+ margin-left: 12px;
+}
+.row{
+  margin-top:30px;
+}
+.opr{
+  background-color:#ff8c00;
+  color:white
+}
+#clr{
+  background-color:#8e9286 ;
+}
+#opr{
+  width: 240px;
+  height: 70px;
+  background-color: #ff8c00;
+  color: white;
+  border-radius: 50px;
+}
+#back{
   text-align: center;
-  box-shadow: 3px 3px #7a7877;
-  transition: all 0.2 ease;}
-  
-   #clr{
-    background-color: #d48161;
-    color: white;
-    float: left;
-    box-shadow: 3px 3px #7a7877;
-  }
-  .opr{
-    background-color: #ffff8a;
-    color: black;
-    box-shadow: 3px 3px #7a7877;
-  } 
-  button:hover{
-    background-color: #7c5561;
-    color: white;
-    
-
-  }
-  
-  #clr:hover{
-    background-color: #ffccd5;
-    color: black;
-  }
-  #opr{
-    width: 270px;
-    height:50px ;
-    background-color:#d48161 ;
-    color: white;
-  }
-  #opr:hover{
-    background-color: #ffccd5;
-    color: black;
-
-  }
-
+}
