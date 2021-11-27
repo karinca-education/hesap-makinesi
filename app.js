@@ -2,6 +2,7 @@ var degisken = document.getElementById('degisken');
 var btn = document.getElementsByClassName('btn');
 var sil = document.getElementById('clr');
 var dot = document.getElementById('dot');
+
 console.log(dot)
 
 
@@ -11,6 +12,7 @@ var operator;
 var result;
 
 function operation(oprtr) {
+    
     switch (oprtr) {
         case '+':
             operant1 = degisken.innerText;
@@ -37,12 +39,15 @@ function operation(oprtr) {
             sill();
             break;
         case '.':
-            if (degisken.innerText != "") {
-                degisken.innerText += '.';
+           
+            if (degisken.innerText.includes('.')) {
+                
                 return;
+            
             }
-            operant1 = degisken.innerText;
-            sill();
+            degisken.innerText+='.';
+          
+            
             break;
         default:
             break;
